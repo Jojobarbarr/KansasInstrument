@@ -1,0 +1,13 @@
+set(target_name basic)
+add_library(${target_name} STATIC "")
+target_sources(${target_name} PRIVATE "${PROJECT_SOURCE_DIR}/src/basic/word.cpp" PRIVATE "${PROJECT_SOURCE_DIR}/include/basic/word.h")
+target_sources(${target_name} PRIVATE "${PROJECT_SOURCE_DIR}/src/basic/lexer.cpp" PRIVATE "${PROJECT_SOURCE_DIR}/include/basic/lexer.h")
+target_sources(${target_name} PRIVATE "${PROJECT_SOURCE_DIR}/src/basic/parser.cpp" PRIVATE "${PROJECT_SOURCE_DIR}/include/basic/parser.h")
+target_sources(${target_name} PRIVATE "${PROJECT_SOURCE_DIR}/src/basic/operator_sign.cpp" PRIVATE "${PROJECT_SOURCE_DIR}/include/basic/operator_sign.h")
+target_sources(${target_name} PRIVATE "${PROJECT_SOURCE_DIR}/src/basic/number.cpp" PRIVATE "${PROJECT_SOURCE_DIR}/include/basic/number.h")
+target_sources(${target_name} PRIVATE "${PROJECT_SOURCE_DIR}/src/basic/invalid.cpp" PRIVATE "${PROJECT_SOURCE_DIR}/include/basic/invalid.h")
+target_sources(${target_name} PRIVATE "${PROJECT_SOURCE_DIR}/src/basic/custom_string.cpp" PRIVATE "${PROJECT_SOURCE_DIR}/include/basic/custom_string.h")
+target_sources(${target_name} PRIVATE "${PROJECT_SOURCE_DIR}/src/basic/node.cpp" PRIVATE "${PROJECT_SOURCE_DIR}/include/basic/node.h")
+target_sources(${target_name} PRIVATE "${PROJECT_SOURCE_DIR}/include/basic/dyn_array.h")
+target_include_directories(${target_name} PUBLIC "${PROJECT_SOURCE_DIR}/include" "${PROJECT_BINARY_DIR}")
+
